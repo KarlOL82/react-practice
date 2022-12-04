@@ -21,7 +21,7 @@ function TodoList(props) {
   return (
     <ul>
       {props.todos.map(todo => (
-        <li>Todo Item</li>
+        <li>{todo.text}</li>
       ))}
     </ul>
   )
