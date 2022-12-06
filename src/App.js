@@ -12,17 +12,25 @@ export default function App() {
       <h1>Todo list</h1>
 
       <TodoList todos={todos} />
-      <AddTodo setTodos={setTodos}/>
-
+      <AddTodo setTodos={setTodos} />
     </div>
   );
 }
 
 function TodoList({ todos }) {
+  function handleToggleTodo(todo) {}
   return (
     <ul>
       {todos.map((todo) => (
-        <li key={todo.id}>{todo.text}</li>
+        <li
+          onClick={() => handleToggleTodo(todo)}
+          style={{
+            textDecoration: todo.done ? "line-through" : "",
+          }}
+          key={todo.id}
+        >
+          {todo.text}
+        </li>
       ))}
     </ul>
   );
@@ -41,7 +49,7 @@ function AddTodo({ setTodos }) {
     };
     setTodos((prevTodos) => {
       return prevTodos.concat(todo);
-    })
+    });
     inputRef.current.value = "";
   }
 
