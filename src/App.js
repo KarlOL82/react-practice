@@ -29,6 +29,11 @@ function TodoList({ todos, setTodos }) {
     );
     setTodos(updatedTodos);
   }
+
+  if (!todos.length) {
+    return <p>No todos left!</p>;
+  }
+
   return (
     <ul>
       {todos.map((todo) => (
