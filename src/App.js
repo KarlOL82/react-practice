@@ -2,6 +2,7 @@ import React from "react";
 import "./style.css";
 
 export default function App() {
+  //List of seeded items that wil be rendered on page load
   const [todos, setTodos] = React.useState([
     { id: 1, text: "Add", done: false },
     { id: 2, text: "Commit", done: false },
@@ -30,7 +31,7 @@ function TodoList({ todos, setTodos }) {
     );
     setTodos(updatedTodos);
   }
-
+  //Display this text if all items are removed from list
   if (!todos.length) {
     return <p>No todos left!</p>;
   }
@@ -52,8 +53,9 @@ function TodoList({ todos, setTodos }) {
     </ul>
   );
 }
-
+// Remove items from the list
 function DeleteTodo({ todo, setTodos }) {
+  // Event handler for delete function
   function handleDeleteTodo() {
     const confirmed = window.confirm("Do you want to delete this?");
     if (confirmed) {
@@ -78,10 +80,10 @@ function DeleteTodo({ todo, setTodos }) {
     </span>
   );
 }
-
+// Add a new item to the list
 function AddTodo({ setTodos }) {
   const inputRef = React.useRef();
-
+  // Event handler for adding items
   function handleAddTodo(event) {
     event.preventDefault();
     const text = event.target.elements.addTodo.value;
@@ -97,6 +99,7 @@ function AddTodo({ setTodos }) {
   }
 
   return (
+    // Simple form for adding items to the list
     <form onSubmit={handleAddTodo}>
       <input name="addTodo" placeholder="Add todo" ref={inputRef} />
       <button type="submit">Submit</button>
