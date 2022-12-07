@@ -3,9 +3,10 @@ import "./style.css";
 
 export default function App() {
   const [todos, setTodos] = React.useState([
-    { id: 1, text: "Wash dishes", done: false },
-    { id: 2, text: "Do laundry", done: false },
-    { id: 3, text: "Take shower", done: false },
+    { id: 1, text: "Add", done: false },
+    { id: 2, text: "Commit", done: false },
+    { id: 3, text: "Push", done: false },
+    { id: 4, text: "Resolve issue", done: false },
   ]);
   return (
     <div className="App">
