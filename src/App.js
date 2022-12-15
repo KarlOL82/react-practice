@@ -67,7 +67,7 @@ function DeleteTodo({ todo, setTodos }) {
 
   return (
     <span
-      className="flex text-red-600 font-bold m-left-10 cursor: cursor-pointer"
+      className="flex btn btn-red text-red-600 font-bold m-left-10 cursor: cursor-pointer"
       onClick={handleDeleteTodo}
       role="button"
       // style={{
@@ -104,7 +104,7 @@ function AddTodo({ setTodos }) {
     <form onSubmit={handleAddTodo}>
 
       <input className="border-solid" name="addTodo" placeholder="Add todo" ref={inputRef} />
-      <button className="border-solid" type="submit">Submit</button>
+      <button className="btn btn-blue border-solid" type="submit">Submit</button>
     </form>
   );
 }
