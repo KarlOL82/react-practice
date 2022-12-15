@@ -11,7 +11,7 @@ export default function App() {
   ]);
   return (
     <div className="App">
-      <h1>Todo list</h1>
+      <h1 className="text-2xl p-6">Todo list</h1>
 
       <TodoList setTodos={setTodos} todos={todos} />
       <AddTodo setTodos={setTodos} />
@@ -67,7 +67,7 @@ function DeleteTodo({ todo, setTodos }) {
 
   return (
     <span
-      className="flex btn btn-red text-red-600 font-bold m-left-10 cursor: cursor-pointer"
+      className="flex btn btn-red justify-center text-red-600 font-bold m-left-10 cursor: cursor-pointer"
       onClick={handleDeleteTodo}
       role="button"
       // style={{
@@ -104,7 +104,7 @@ function AddTodo({ setTodos }) {
     <form onSubmit={handleAddTodo}>
 
       <input className="border-solid" name="addTodo" placeholder="Add todo" ref={inputRef} />
-      <button className="btn btn-blue border-solid" type="submit">Submit</button>
+      <button className="btn btn-blue rounded-md text-white bg-blue-500 border-solid" type="submit">Submit</button>
     </form>
   );
 }
