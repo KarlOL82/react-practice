@@ -103,8 +103,8 @@ function AddTodo({ setTodos }) {
     // Simple form for adding items to the list
     <form onSubmit={handleAddTodo}>
 
-      <input className="border-solid" name="addTodo" placeholder="Add todo" ref={inputRef} />
-      <button className="btn btn-blue rounded-md text-white bg-blue-500 border-solid" type="submit">Submit</button>
+      <input className="border-solid outline p-3 m-3" name="addTodo" placeholder="Add todo" ref={inputRef} />
+      <button className="btn btn-blue p-4 rounded-md text-white bg-blue-500 border-solid" type="submit">Submit</button>
     </form>
   );
 }
