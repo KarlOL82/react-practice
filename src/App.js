@@ -10,8 +10,8 @@ export default function App() {
     { id: 4, text: "Resolve issue", done: false },
   ]);
   return (
-    <div className="App">
-      <h1 className="text-2xl p-6">Todo list</h1>
+    <div className="App bg-blue-200">
+      <h1 className="text-3xl p-6">Todo list</h1>
 
       <TodoList setTodos={setTodos} todos={todos} />
       <AddTodo setTodos={setTodos} />
