@@ -11,7 +11,7 @@ export default function App() {
   ]);
   return (
     <div className="App bg-blue-200">
-      <h1 className="text-3xl p-6">Todo list</h1>
+      <h1 className="text-3xl font-extrabold p-6">Todo list</h1>
 
       <TodoList setTodos={setTodos} todos={todos} />
       <AddTodo setTodos={setTodos} />
@@ -67,7 +67,7 @@ function DeleteTodo({ todo, setTodos }) {
 
   return (
     <span
-      className="flex btn btn-red justify-center text-red-600 font-bold m-left-10 cursor: cursor-pointer"
+      className="flex bg-indigo-300 btn btn-red justify-center text-red-600 font-bold m-left-10 cursor: cursor-pointer"
       onClick={handleDeleteTodo}
       role="button"
       // style={{
