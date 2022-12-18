@@ -67,7 +67,7 @@ function DeleteTodo({ todo, setTodos }) {
 
   return (
     <span
-      className="flex bg-indigo-300 btn btn-red justify-center text-red-600 font-bold m-left-10 cursor: cursor-pointer"
+      className="btn btn-red justify-center text-red-600 font-bold m-left-10 m-3 cursor: cursor-pointer"
       onClick={handleDeleteTodo}
       role="button"
       // style={{
