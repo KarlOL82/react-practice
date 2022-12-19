@@ -8,6 +8,7 @@ export default function App() {
     { id: 2, text: "Commit", done: false },
     { id: 3, text: "Push", done: false },
     { id: 4, text: "Resolve issue", done: false },
+    { id: 5, text: "Debug placeholder image issue in Wilco", done: false }
   ]);
   return (
     <div className="App bg-blue-200">
