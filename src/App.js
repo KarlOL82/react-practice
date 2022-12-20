@@ -58,7 +58,7 @@ function TodoList({ todos, setTodos }) {
 function DeleteTodo({ todo, setTodos }) {
   // Event handler for delete function
   function handleDeleteTodo() {
-    const confirmed = window.confirm("Do you want to delete this?");
+    const confirmed = window.confirm("Are you sure you want to delete this?");
     if (confirmed) {
       setTodos((prevTodos) => {
         return prevTodos.filter((t) => t.id !== todo.id);
