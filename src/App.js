@@ -9,7 +9,8 @@ export default function App() {
     { id: 3, text: "Push", done: false },
     { id: 4, text: "Resolve issue", done: false },
     { id: 5, text: "Debug placeholder image issue in Wilco", done: false },
-    { id: 6, text: "Render top seller icon in Wilco assignment", done: false}
+    { id: 6, text: "Render top seller icon in Wilco assignment", done: false},
+    { id: 7, text: "debug Wilco React component", done: false }
   ]);
   return (
     <div className="App bg-blue-200">
