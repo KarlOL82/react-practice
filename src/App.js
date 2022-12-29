@@ -14,8 +14,8 @@ export default function App() {
     { id: 8, text: "Find a new project", done: false}
   ]);
   return (
-    <div className="App bg-blue-200">
-      <h1 className="text-3xl font-extrabold p-6">Todo list</h1>
+    <div className="App bg-blue-300">
+      <h1 className="text-4xl font-extrabold p-6">Todo list</h1>
 
       <TodoList setTodos={setTodos} todos={todos} />
       <AddTodo setTodos={setTodos} />
