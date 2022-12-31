@@ -38,7 +38,7 @@ function TodoList({ todos, setTodos }) {
   }
   //Display this text if all items are removed from list
   if (!todos.length) {
-    return <p>Nothing left to do!</p>;
+    return <p>No todos left!</p>;
   }
 
   return (
