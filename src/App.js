@@ -44,7 +44,7 @@ function TodoList({ todos, setTodos }) {
   return (
     <ul>
       {todos.map((todo) => (
-        <li className="font-bold"
+        <li className="font-bold text-xl"
           onDoubleClick={() => handleToggleTodo(todo)}
           style={{
             textDecoration: todo.done ? "line-through" : "",
