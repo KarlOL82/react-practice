@@ -44,7 +44,7 @@ function TodoList({ todos, setTodos }) {
   return (
     <ul>
       {todos.map((todo) => (
-        <li
+        <li className="font-bold"
           onDoubleClick={() => handleToggleTodo(todo)}
           style={{
             textDecoration: todo.done ? "line-through" : "",
@@ -72,7 +72,7 @@ function DeleteTodo({ todo, setTodos }) {
 
   return (
     <span
-      className="flex btn btn-red border-solid justify-center text-red-600 font-bold m-left-10 m-3 cursor: cursor-pointer"
+      className="flex btn btn-red border-solid justify-center text-red-600 font-extrabold m-left-10 m-3 cursor: cursor-pointer"
       onClick={handleDeleteTodo}
       role="button"
       // style={{
